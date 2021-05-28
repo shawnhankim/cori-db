@@ -24,7 +24,11 @@ $ docker pull sameersbn/postgresql:12-20200524
 Alternatively you can build the image yourself.
 
 ```bash
-$ docker build --no-cache -t postgresql ./ubutu
+$ docker build --no-cache -t postgresql ./ubuntu
+$ docker run --name postgres-1 -p 5432:5432 -d postgresql
+$ docker run --name postgres-2 -itd --restart always \
+  --env 'DB_USER=dbuser' --env 'DB_PASS=dbpasswd' --env 'DB_NAME=dbname' \
+  -p 5432:5432 -d postgresql
 ```
 
 ### Quickstart
