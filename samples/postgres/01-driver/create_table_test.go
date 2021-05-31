@@ -26,9 +26,9 @@ var (
 
 	envHostname = drivers.DefaultEnv("DRIVER_HOSTNAME", "localhost")
 	envPort     = drivers.DefaultEnv("DRIVER_PORT", "5432")
-	envUsername = drivers.DefaultEnv("DRIVER_USER", "dbuser")
-	envPassword = drivers.DefaultEnv("DRIVER_PASS", "dbpasswd")
-	envDatabase = drivers.DefaultEnv("DRIVER_DB", "dbname")
+	envUsername = drivers.DefaultEnv("DRIVER_USER", "portal")
+	envPassword = drivers.DefaultEnv("DRIVER_PASS", "portal")
+	envDatabase = drivers.DefaultEnv("DRIVER_DB", "portal")
 )
 
 func TestAssemble(t *testing.T) {

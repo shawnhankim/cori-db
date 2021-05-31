@@ -1,0 +1,23 @@
+# github.com/friendsofgo/errors v0.9.2
+github.com/friendsofgo/errors
+# github.com/lib/pq v1.2.1-0.20191011153232-f91d3411e481
+github.com/lib/pq
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# github.com/spf13/cast v1.3.1
+github.com/spf13/cast
+# github.com/volatiletech/inflect v0.0.1
+github.com/volatiletech/inflect
+# github.com/volatiletech/sqlboiler/v4 v4.5.0
+github.com/volatiletech/sqlboiler/v4/boil
+github.com/volatiletech/sqlboiler/v4/drivers
+github.com/volatiletech/sqlboiler/v4/drivers/sqlboiler-psql/driver
+github.com/volatiletech/sqlboiler/v4/importers
+github.com/volatiletech/sqlboiler/v4/queries
+github.com/volatiletech/sqlboiler/v4/queries/qm
+github.com/volatiletech/sqlboiler/v4/queries/qmhelper
+# github.com/volatiletech/strmangle v0.0.1
+github.com/volatiletech/strmangle
+# golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
+golang.org/x/xerrors
+golang.org/x/xerrors/internal

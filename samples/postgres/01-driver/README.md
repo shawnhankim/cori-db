@@ -20,8 +20,8 @@ brew link --force libpq ail
 
 ```bash
 $ docker build --no-cache -t postgresql ./ubuntu
-$ docker run --name postgres-portal -itd --restart always \
-  --env 'DB_USER=dbuser' --env 'DB_PASS=dbpasswd' --env 'DB_NAME=dbname' \
+$ docker run --name portal-db -itd --restart always \
+  --env 'DB_USER=portal' --env 'DB_PASS=portal' --env 'DB_NAME=portal' \
   -p 5432:5432 -d postgresql
 ```
 

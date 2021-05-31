@@ -4,7 +4,7 @@ This repo provides sample codes and how to start w/ SQLBoilder which is a tool t
 
 ## Getting started
 
-## Download
+### Download
 
 ```bash
 # Go 1.16 and above:
@@ -21,6 +21,12 @@ go get github.com/volatiletech/sqlboiler/v4
 go get github.com/volatiletech/null/v8
 ```
 
+### Generate Model
+
+```bash
+sqlboiler psql -o portal -p portal -c portal.toml
+sqlboiler psql -c portal-psql.toml
+```
 
 ## Reference
 
