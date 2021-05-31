@@ -2,8 +2,7 @@ FROM ubuntu:20.04 as builder
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get clean  && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get -y install init \
             software-properties-common && \
     apt-get -y autoremove
@@ -33,3 +32,10 @@ ARG MODULES_BIN
 
 ENV PATH=${PATH}:/usr/local/go/bin
 # WORKDIR /dataplane-manager
+
+RUN mkdir /db
+WORKDIR /db
+
+ENTRYPOINT ["sqlite3"]
+CMD ["test.db"]
+

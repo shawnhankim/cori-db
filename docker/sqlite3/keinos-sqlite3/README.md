@@ -30,7 +30,7 @@ docker pull keinos/sqlite3:latest
 ## Run Container Image
 
 ```bash
-docker run --name sqlite-db -d keinos/sqlite3
+docker run --name sqlite-db -v ~/db/:/db -d keinos/sqlite3
 ```
   
 ## Reference
