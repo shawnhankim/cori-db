@@ -24,4 +24,3 @@ docker run -it -v /home/dbfolder/:/db imagename
 docker build --no-cache -t sqlite .
 docker run   --name sqlite-db -v ~/db/:/db -d sqllite
 ```
-

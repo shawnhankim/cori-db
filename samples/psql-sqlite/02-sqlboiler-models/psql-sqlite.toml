@@ -1,0 +1,19 @@
+output      = "models/portal"
+wipe        = true
+no-tests    = true
+no-hooks    = true
+pkgname     = "portal"
+
+[psql]
+  dbname    = "portal"
+  host      = "localhost"
+  port      = 5432
+  user      = "portal"
+  pass      = "portal"
+  schema    = "public"
+  sslmode   = "disable"
+  whitelist = ["users", "orgs", "apps"]
+  blacklist = ["migrations", "other"]
+
+[sqlite3]
+  dbname = "test.db"
