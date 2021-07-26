@@ -37,3 +37,4 @@ go test  -tags libsqlite3
 
 ## Reference
 - [go-dqlite](https://github.com/canonical/go-dqlite)
+- [Raft interactive material](http://thesecretlivesofdata.com/raft/)
